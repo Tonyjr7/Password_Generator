@@ -1,1 +1,9 @@
-
+{
+  "version": 2,
+  "builds": [
+    { "src": "password_generator/wsgi.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "password_generator/wsgi.py" }
+  ]
+}
