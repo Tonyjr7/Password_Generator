@@ -1,41 +1,68 @@
 body {
-    background-color: #f8f9fa;
-    font-family: 'Arial', sans-serif;
+    background-color: #eef2f3;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
 }
 
 .container {
     margin-top: 50px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 h1, h2, h4 {
-    color: #343a40;
+    color: #2c3e50;
+    margin-bottom: 20px;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-weight: 700;
 }
 
 h2 {
     font-size: 2rem;
+    font-weight: 600;
 }
 
 h4 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 500;
 }
 
 form {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
 }
 
-select, input[type="checkbox"] {
+select, input[type="checkbox"], input[type="submit"], a.btn {
     margin: 10px 0;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s;
 }
 
-input[type="submit"] {
-    margin-top: 20px;
+select {
+    background: #ecf0f1;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+input[type="submit"], a.btn {
+    background: #3498db;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+input[type="submit"]:hover, a.btn:hover {
+    background: #2980b9;
 }
 
 .alert {
@@ -45,4 +72,6 @@ input[type="submit"] {
 
 a.btn {
     margin-top: 20px;
+    display: inline-block;
+    text-align: center;
 }
